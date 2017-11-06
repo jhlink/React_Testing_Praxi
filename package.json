@@ -24,7 +24,7 @@
     ],
     "moduleNameMapper": {
       "^.+\\.(css|scss)$": "identity-obj-proxy",
-      ".(svg|tiff|jpg|jpeg)$": "test"
+      ".(svg|tiff|jpg|jpeg)$": "<rootDir>/__mocks__/fileMock.js"
     },
     "moduleFileExtensions": ["js"],
     "moduleDirectories": ["node_modules", "shared", "src"]
