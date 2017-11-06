@@ -3,14 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "enzyme": "^3.1.1",
-    "enzyme-adapter-react-16": "^1.0.4",
-    "enzyme-to-json": "^3.2.1",
-    "jest": "^21.2.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.17",
-    "react-test-renderer": "^16.0.0"
+    "react-scripts": "1.0.17"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,7 +16,21 @@
     "test:coverage": "jest --coverage"
   },
   "jest": {
-    "setupFiles": ["./test/jestsetup.js"],
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "setupFiles": [
+      "./test/jestsetup.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|scss)$": "identity-obj-proxy"
+    }
+  },
+  "devDependencies": {
+    "enzyme": "^3.1.1",
+    "enzyme-adapter-react-16": "^1.0.4",
+    "enzyme-to-json": "^3.2.1",
+    "jest": "^21.2.1",
+    "react-test-renderer": "^16.0.0"
   }
 }
